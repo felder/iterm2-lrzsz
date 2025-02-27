@@ -11,12 +11,13 @@ For more information see:
 
 Prerequisites
 ---
-
-- iTerm2 is necessary.
-- Install lrzsz on your mac:
-
+- iTerm2
+- homebrew
+   
+Install lrzsz on your mac:
+---
 ```shell
-sudo brew install lrzsz
+brew install lrzsz
 ```
 
 Set trigger for iTerm2
@@ -26,7 +27,7 @@ Set trigger for iTerm2
 - Make sure they're executable:
 	- chmod 755 /Users/{USERNAME}/.local/bin/iterm2-send-zmodem.sh
 	- chmod 755 /Users/{USERNAME}/.local/bin/iterm2-recv-zmodem.sh
-- On my system, homebrew installs sz and rz to /opt/homebrew/bin/ and the scripts are written accordingly.  If your rz and sz live somewhere else, modify the script.
+- On my system, homebrew installs sz and rz to /opt/homebrew/bin/ and the scripts are written accordingly.  If your rz and sz live somewhere else, modify the scripts.
 - Set up two triggers in iTerm2's [preference] -> [profile] -> [advanced] -> [triggers] -> [edit]
 
 ```
