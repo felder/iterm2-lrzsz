@@ -23,10 +23,10 @@ brew install lrzsz
 Set trigger for iTerm2
 ---
 
-- Clone this repo and copy the two shell scripts somewhere.  I chose: /Users/{USERNAME}/.local/bin
+- Clone this repo and copy the two shell scripts somewhere.  I chose: /Users/felder/.local/bin/
 - Make sure they're executable:
-	- chmod 755 /Users/{USERNAME}/.local/bin/iterm2-send-zmodem.sh
-	- chmod 755 /Users/{USERNAME}/.local/bin/iterm2-recv-zmodem.sh
+	- chmod 755 /Users/felder/.local/bin/iterm2-send-zmodem.sh
+	- chmod 755 /Users/felder/.local/bin/iterm2-recv-zmodem.sh
 - On my system, homebrew installs sz and rz to /opt/homebrew/bin/ and the scripts are written accordingly.  If your rz and sz live somewhere else, modify the scripts.
 - Set up two triggers in iTerm2's [preference] -> [profile] -> [advanced] -> [triggers] -> [edit]
 
