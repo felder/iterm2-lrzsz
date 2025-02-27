@@ -5,9 +5,9 @@ This document describes how to configure iterm2 on your Mac to be able to use rz
 lrzsz is a unix communication package providing the XMODEM, YMODEM, ZMODEM file transfer protocol.  Most distros provide a system package for lrzsz and lrzsz is provided by homebrew for installation on your Mac.
 
 For more information see:
-https://www.ohse.de/uwe/software/lrzsz.html
-https://iterm2.com/
-https://brew.sh/
+- https://www.ohse.de/uwe/software/lrzsz.html
+- https://iterm2.com/
+- https://brew.sh/
 
 Prerequisites
 ---
