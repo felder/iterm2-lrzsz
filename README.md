@@ -13,6 +13,10 @@ Prerequisites
 ---
 - iTerm2
 - homebrew
+- lrzsz package installed on the remote host.  On Ubuntu 24.04:
+  - ```shell
+    sudo apt install lrzsz
+    ```
    
 Install lrzsz on your mac:
 ---
