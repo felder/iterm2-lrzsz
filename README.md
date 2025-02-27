@@ -24,12 +24,12 @@ Set trigger for iTerm2
 
 ```
 	Regular expression: rz waiting to receive.\*\*B0100
-    Action: Run Silent Coprocess
-    Parameters: /Users/{USERNAME}/.local/bin/iterm2-send-zmodem.sh
+	Action: Run Silent Coprocess
+	Parameters: /Users/{USERNAME}/.local/bin/iterm2-send-zmodem.sh
 
-    Regular expression: \*\*B00000000000000
-    Action: Run Silent Coprocess
-    Parameters: /Users/{USERNAME}/.local/bin/iterm2-recv-zmodem.sh
+	Regular expression: \*\*B00000000000000
+	Action: Run Silent Coprocess
+	Parameters: /Users/{USERNAME}/.local/bin/iterm2-recv-zmodem.sh
 ```
 
 How to use it
