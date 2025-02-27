@@ -1,15 +1,18 @@
 # iterm2-lrzsz
 
-There are a mess of troubles in sending and receiving files from my macbook to dev server, since I had no permission to excute command scp on dev server.
-Here is a lightweight, quick, and convenience tools which related with ssh, called lrzsz. lrzsz is a unix communication package providing the XMODEM, YMODEM, ZMODEM file transefer protocol which usually has been already installed in most of servers.
+This document describes how to configure iterm2 on your Mac to be able to use rz and sz for file transfers through the terminal.
+
+lrzsz is a unix communication package providing the XMODEM, YMODEM, ZMODEM file transfer protocol.  Most distros provide a system package for lrzsz and lrzsz is provided by homebrew for installation on your Mac.
 
 For more information see:
 https://www.ohse.de/uwe/software/lrzsz.html
+https://iterm2.com/
+https://brew.sh/
 
 Prerequisites
 ---
 
-- iTerm2 is necessary. [Here][] is the official website.
+- iTerm2 is necessary.
 - Install lrzsz on your mac:
 
 ```shell
@@ -19,7 +22,11 @@ sudo brew install lrzsz
 Set trigger for iTerm2
 ---
 
-- First you should download the scripts from [ZModem integration for iTerm 2][], and save them in /Users/{USERNAME}/.local/bin
+- Clone this repo and copy the two shell scripts somewhere.  I chose: /Users/{USERNAME}/.local/bin
+- Make sure they're executable:
+	- chmod 755 /Users/{USERNAME}/.local/bin/iterm2-send-zmodem.sh
+	- chmod 755 /Users/{USERNAME}/.local/bin/iterm2-recv-zmodem.sh
+- On my system, homebrew installs sz and rz to /opt/homebrew/bin/ and the scripts are written accordingly.  If your rz and sz live somewhere else, modify the script.
 - Set up two triggers in iTerm2's [preference] -> [profile] -> [advanced] -> [triggers] -> [edit]
 
 ```
@@ -38,9 +45,8 @@ Note the first time you try this, iterm2 may indicate there was an error.  In my
 
 ### rz
 
-- Run "rz" on dev server. Then it would prompt that something like "rz waiting to receive." and create a new window titled "choose a file to send".
-- Choose the file you need to receive from your laptop.
+- Run "rz" on the remote server. If everything is setup correctly, iterm2 should prompt you to choose a file to send from your Mac.
 
 ### sz
 
-- run "sz /path/file" to send server's file to your laptop.
+- Run "sz /path/to/file" on the remote server. If everything is setup correctly, iterm2 should prompt you to choose a location for saving the file to your Mac.
